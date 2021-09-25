@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -113,10 +114,42 @@
 
       </div>
       <!-- /.hotel-info -->
+      <div class="hotel-grid">
+        <div class="slider">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"> <img src="img/slide1.jpg" alt="">Отель 1</div>
+              <div class="swiper-slide"> <img src="img/slide2.jpg" alt="">Отель 2</div>
+              <div class="swiper-slide"> <img src="img/slide3.jpg" alt="">Отель 3</div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination"></div> точки на слайдаре-->
+          
+            <!-- If we need navigation buttons -->
+            <button class="slider-button slider-button--prev"></button>
+            <button class="slider-button slider-button--next"></button>
+          
+            <!-- If we need scrollbar -->
+          <!--<div class="swiper-scrollbar"></div> убрали scrollbar-->
+          </div>
+          <!-- /.swiper -->
+
+        </div>
+        <!-- /.slider -->
+        
+      </div>
+      <!-- /.hotel-grid -->
+
     </div>
     <!-- /.container -->
   </section>
   <!-- /.hotel -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
