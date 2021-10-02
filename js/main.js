@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
  // direction: 'vertical', убрали вертикаль
   loop: true, //перелистываем на 1 слайдер когда подходим к концу
@@ -10,12 +10,12 @@ const swiper = new Swiper('.swiper', {
 
   // Navigation arrows стрелочки
   navigation: {
-    nextEl: '.slider-button--next',
-    prevEl: '.slider-button--prev',
+    nextEl: '.hotel-slider__button--next',
+    prevEl: '.hotel-slider__button--prev',
   },
 
   // And if we need scrollbar скролл
- // scrollbar: {
+ // scrollbar: {user user
  //   el: '.swiper-scrollbar',
  // },
  
@@ -27,6 +27,20 @@ var mySwiper = new Swiper('.swiper', {
   },
 });
 
+
+
+const reviewSlider = new Swiper('.reviews-slider', {
+  
+  loop: true, //перелистываем на 1 слайдер когда подходим к концу
+
+  navigation: {
+    nextEl: '.reviews-slider__button--next',
+    prevEl: '.reviews-slider__button--prev',
+  },
+
+ 
+ 
+});
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [7.573653, 79.803867],
@@ -90,4 +104,4 @@ ymaps.ready(function () {
           center: [7.573653, 79.803867],
           zoom: 14
         });
-      }
+      };
